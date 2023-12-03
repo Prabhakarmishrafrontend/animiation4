@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation-name: roundMove;
+    animation-duration: 10s;
+}
+
+@keyframes roundMove {
+    0%{
+        left: 0;
+        top: 0;
+        
+    }
+    50%{
+        left: 85%;
+        top: 0;
+        rotate: 0deg;
+    }
+    75%{
+        left: 85%;
+        top: 69%;
+        rotate: 180deg;
+        
+    }
+
+    90%{
+        left: 0;
+        top: 69%;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
